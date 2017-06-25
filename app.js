@@ -18,6 +18,6 @@ app.use(function(req, res) {
   res.status(404).send('Oh my! Did you type in the wrong page?');
 });
 
-app.listen(3000, function () {
-  console.log('Listening on port 3000');
+app.listen(process.env.PORT || 3000, function () {
+  console.log('Server started');
 });
