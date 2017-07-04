@@ -1,6 +1,8 @@
 # rachel-rosalia
 A personal website for Rachel Rosalia. Written using Express, React, and Bootstrap.
 
+Currently hosted at http://rachel-rosalia.herokuapp.com
+
 ## Development
 To develop, run `npm start` in both the root and client directories. Open http://localhost:3000 in your browser. Changes saved in the application will be reflected in the browser.
 
