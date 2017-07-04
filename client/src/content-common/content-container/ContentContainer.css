@@ -1,0 +1,28 @@
+.Content-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Content-container h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.Content-container h1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.Content-container h2, h3 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+
+.Content-container p {
+  color: gray;
+  padding-left: 50px;
+  max-width: 600px;
+}
