@@ -27,6 +27,21 @@
   overflow: hidden;
   padding-bottom: 10000%;
   margin-bottom: -10000%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.Nav-button {
+  background-color: darkorange;
+  color: white;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 20px;
+  letter-spacing: 3px;
+}
+
+.Nav-button:hover {
+  background-color: #ee7600;
 }
 
 @keyframes App-logo-spin {

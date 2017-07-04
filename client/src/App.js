@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Link } from "react-router-dom"
 
 
 class NavBar extends Component {
   render() {
     return (
-      <span className="Nav-bar">
-        My pretty pretty navbar
-      </span>
+      <div>
+        <Link to="/" className="btn btn-block Nav-button">Home</Link>
+        <Link to="/projects" className="btn btn-block Nav-button">Projects</Link>
+        <Link to="/work" className="btn btn-block Nav-button">Work</Link>
+      </div>
     );
   };
 }
@@ -36,10 +38,10 @@ class App extends Component {
     return (
       <div className="container-fluid">
       <div className="row">
-        <div className="col-sm-3 border Nav-bar-column"><NavBar /></div>
-        <div className="col-sm-9 border">
+        <div className="col-sm-2 border Nav-bar-column"><NavBar /></div>
+        <div className="col-sm-10 border">
           <Switch>
-            <Route exact path='/' component={MainContent}/>
+            <Route exact path="/" component={MainContent}/>
           </Switch>
         </div>
       </div>
