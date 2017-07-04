@@ -44,6 +44,33 @@
   background-color: #ee7600;
 }
 
+.Profile-photo {
+  border: 5px white solid;
+}
+
+.Photo-container {
+  padding: 10%;
+}
+
+.Nav-name {
+  font-size: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.Nav-text {
+  color: white;
+  text-align: right;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+hr.Nav-text {
+  border-width: 3px;
+  margin-right: 10%;
+  margin-left: 30%;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
