@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import photo from "./photo.jpg";
+
 import "./App.css";
+import ReactContent from "./reactcontent/ReactContent.js"
 
 import { Route, Switch, Link } from "react-router-dom"
 
@@ -23,22 +24,6 @@ class NavBar extends Component {
   };
 }
 
-class MainContent extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
-
 class App extends Component {
   render() {
     return (
@@ -47,7 +32,7 @@ class App extends Component {
         <div className="col-sm-2 border Nav-bar-column"><NavBar /></div>
         <div className="col-sm-10 border">
           <Switch>
-            <Route exact path="/" component={MainContent}/>
+            <Route exact path="/" component={ReactContent}/>
           </Switch>
         </div>
       </div>
