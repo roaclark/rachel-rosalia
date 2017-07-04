@@ -23,8 +23,8 @@ class App extends Component {
     return (
       <div className="container-fluid">
       <div className="row">
-        <div className="col-sm-2 border Nav-bar-column"><NavBar /></div>
-        <div className="col-sm-10 border">
+        <div className="col-sm-3 col-md-2 border Nav-bar-column"><NavBar /></div>
+        <div className="col-sm-9 col-md-10 border">
           <Switch>
             <Route exact path="/" component={WrapContent(AboutContent)}/>
             <Route path="/work" component={WrapContent(SampleContent)}/>
