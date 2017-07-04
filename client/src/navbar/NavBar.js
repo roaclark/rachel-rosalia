@@ -12,9 +12,10 @@ class NavBar extends Component {
         </div>
         <p className="Nav-text Nav-name">Rachel Rosalia</p>
         <hr className="Nav-text" />
-        <Link to="/" className="btn btn-block Nav-button">Home</Link>
+        <Link to="/" className="btn btn-block Nav-button">About Me</Link>
+        <Link to="/work" className="btn btn-block Nav-button">Work History</Link>
         <Link to="/projects" className="btn btn-block Nav-button">Projects</Link>
-        <Link to="/work" className="btn btn-block Nav-button">Work</Link>
+        <Link to="/contact" className="btn btn-block Nav-button">Contact</Link>
       </div>
     );
   };
