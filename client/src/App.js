@@ -7,11 +7,11 @@ import NavBar from "./navbar/NavBar.js";
 
 import { Route, Switch } from "react-router-dom";
 
-class SampleContentContainer extends Component {
-  render() {
+function WrapContent(Comp) {
+  return () => {
     return (
       <ContentContainer>
-        <SampleContent />
+        <Comp />
       </ContentContainer>
     );
   }
@@ -26,7 +26,8 @@ class App extends Component {
         <div className="col-sm-10 border">
           <Switch>
             <Route exact path="/" component={ReactContent}/>
-            <Route path="/work" component={SampleContentContainer}/>
+            <Route path="/work" component={WrapContent(SampleContent)}/>
+            <Route path="/projects" component={WrapContent(SampleContent)}/>
           </Switch>
         </div>
       </div>
