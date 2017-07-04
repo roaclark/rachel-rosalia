@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import ContentContainer from "./content-common/content-container/ContentContainer.js";
 import AboutContent from "./content/about/AboutContent.js";
