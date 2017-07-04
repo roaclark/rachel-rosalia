@@ -18,6 +18,17 @@
   font-size: large;
 }
 
+.Nav-bar {
+  text-align: center;
+}
+
+.Nav-bar-column {
+  background-color: darkorange;
+  overflow: hidden;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

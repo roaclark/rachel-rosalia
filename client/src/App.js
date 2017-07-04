@@ -2,16 +2,20 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 
-class Para extends Component {
+class NavBar extends Component {
   render() {
-    return <p>My string!</p>;
-  }
+    return (
+      <span className="Nav-bar">
+        My pretty pretty navbar
+      </span>
+    );
+  };
 }
 
-class App extends Component {
+class MainContent extends Component {
   render() {
     return (
       <div className="App">
@@ -22,7 +26,23 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Route path='/special' component={Para} />
+      </div>
+    );
+  }
+}
+
+class App extends Component {
+  render() {
+    return (
+      <div className="container-fluid">
+      <div className="row">
+        <div className="col-sm-3 border Nav-bar-column"><NavBar /></div>
+        <div className="col-sm-9 border">
+          <Switch>
+            <Route exact path='/' component={MainContent}/>
+          </Switch>
+        </div>
+      </div>
       </div>
     );
   }
