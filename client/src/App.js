@@ -17,12 +17,11 @@ function WrapContent(Comp) {
       </ContentContainer>
     );
   }
-}
+};
 
-class App extends Component {
-  render() {
-    return (
-      <div className="container-fluid">
+function App() {
+  return (
+    <div className="container-fluid">
       <div className="row">
         <div className="col-sm-3 col-md-2 border Nav-bar-column"><NavBar /></div>
         <div className="col-sm-9 col-md-10 border">
@@ -34,9 +33,8 @@ class App extends Component {
           </Switch>
         </div>
       </div>
-      </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;
