@@ -5,6 +5,8 @@
   background: -o-linear-gradient(right, orange, darkorange); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, orange, darkorange); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, orange, darkorange); /* Standard syntax */
+
+  padding-bottom: 15px;
 }
 
 .Photo-container, .Profile-photo {
@@ -32,7 +34,7 @@ hr.Nav-text {
 }
 
 .Nav-button {
-  background-color: none;
+  background-color: transparent;
   color: white;
   text-align: right;
   text-transform: uppercase;
