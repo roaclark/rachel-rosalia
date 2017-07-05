@@ -11,10 +11,10 @@ function NavBar() {
       </div>
       <p className="Nav-text Nav-name">Rachel Rosalia</p>
       <hr className="Nav-text" />
-      <Link to="/" className="btn btn-block Nav-button">About Me</Link>
-      <Link to="/work" className="btn btn-block Nav-button">Work History</Link>
-      <Link to="/projects" className="btn btn-block Nav-button">Projects</Link>
-      <Link to="/contact" className="btn btn-block Nav-button">Contact</Link>
+      <Link to="/" className="btn Nav-button">About Me</Link>
+      <Link to="/work" className="btn Nav-button">Work History</Link>
+      <Link to="/projects" className="btn Nav-button">Projects</Link>
+      <Link to="/contact" className="btn Nav-button">Contact</Link>
     </div>
   );
 };

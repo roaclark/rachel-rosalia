@@ -7,28 +7,15 @@
   background: linear-gradient(to right, orange, darkorange); /* Standard syntax */
 }
 
-@media (min-width: 768px) { 
-  .Nav-bar-column {
-    overflow: hidden;
-    padding-bottom: 10000%;
-    margin-bottom: -10000%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-.Photo-container {
-  padding: 10%;
-}
-
-.Profile-photo {
-  border: 5px white solid;
+.Photo-container, .Profile-photo {
+  display: none;
 }
 
 .Nav-name {
   font-size: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 
 .Nav-text {
@@ -55,4 +42,34 @@ hr.Nav-text {
 
 .Nav-button:hover {
   background-color: #ee7600;
+}
+
+@media (min-width: 768px) { 
+  .Nav-bar-column {
+    overflow: hidden;
+    padding-bottom: 10000%;
+    margin-bottom: -10000%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .Photo-container, .Profile-photo {
+    display: block;
+  }
+
+  .Photo-container {
+    padding: 10%;
+  }
+
+  .Profile-photo {
+    border: 5px white solid;
+  }
+
+  .Nav-name {
+    padding-top: 0px;
+  }
+
+  .Nav-button {
+    width: 100%;
+  }
 }
